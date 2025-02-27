@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head itemscope="itemscope" itemtype="http://smpte.org/standards/documents">
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script src="../tooling/smpte.js"></script>
+  <script type="module" src="../tooling/smpte.js"></script>
   <meta itemprop="pubType" content="AG" />
   <meta itemprop="pubNumber" content="06" />
   <meta itemprop="pubState" content="draft" />
-  <meta itemprop="pubDateTime" content="2023-01-31" />
+  <meta itemprop="pubDateTime" content="2025-02-26" />
   <title>New Project Form Instructions</title>
 </head>
 
@@ -25,7 +24,17 @@
     <ul>
       <li><cite id="bib-smpte-standards-operations-manual">SMPTE Standards Operations Manual</cite>
       <a>https://www.smpte.org/about/policies-and-governance</a></li>
+      <li><cite id="bib-ag-26">SMPTE AG-26</cite>, HTML Pub: Tooling and documentation for HTML documents
+        <a>https://doc.smpte-doc.org/html-pub/main/</a></li>
     </ul>
+  </section>
+
+  <section id="sec-instructions-general">
+    <h2>General Instructions</h2>
+    <p>
+      All new projects submitted as of <code>2025-06-01</code> shall utilize the HTML Workflow as defined by <a href="#bib-ag-26"></a> and other AGs, with the explicit exception of Registered Disclosure Document (RDD). 
+    </p>
+    <p class="note">Support for RDD Document types will come at a future date, TBD. </p>
   </section>
 
   <section id="sec-instructions-for-project-details">
@@ -80,8 +89,6 @@
       <section id="sec-notes-for-table-3">
         <h4>Notes for Table 3</h4>
         <dl>
-          <dt>Chair</dt>
-          <dd>Just the name of the person who will be the main contact for the project. No email address – it will be on a public website. Usually the first listed proponent.</dd>
           <dt>Description</dt>
           <dd>A short description of the project’s purpose and objectives. This text is aimed at the public who will read it and thus should be able to understand the Project in general terms. There may be extra requirements for this field for the Public CD Process (<a href="#bib-smpte-ag-22"></a>)</dd>
           <dt>Problem to be solved</dt>
@@ -91,19 +98,21 @@
           <dt>Specific Tasks</dt>
           <dd>A high-level list of tasks that need to be completed as the work progresses. Consider test materials, sample bitstreams, sample software, data schemas, validation criteria, problem decomposition, liaisons with other organizations etc.</dd>
           <dt>Type of Output</dt>
-          <dd>Check one or more boxes where:
-<pre>
-ST – Standard               RP  – Recommended Practice             Rev –Revision
-EG – Engineering Guideline  AMD – Amendment                       
-ER – Engineering Report     RDD – Registered Disclosure Document
-</pre>
-          </dd>
+          <dd>Check one or more boxes where:</dd>
+          <dd><b>ST</b> – Standard</dd>
+          <dd><b>RP</b>  – Recommended Practice</dd>
+          <dd><b>Rev</b> – Revision</dd>
+          <dd><b>EG</b> – Engineering Guideline</dd>                       
+          <dd><b>ER</b> – Engineering Report</dd>     
+          <dd><b>RDD</b> – Registered Disclosure Document</dd>
+          <dt>HTML Base Doc</dt>
+          <dd>If <b>Rev</b> is checked, indicate if there is an HTML published base doc as defined by <a href="#bib-ag-26"></a>. This is to ensure there is a proper redline that will be generated as part of the revision process, and to ensure extra time is allocated to the generation of an HTML base doc if none such exists.</dd>
+          <dt>HTML Training</dt>
+          <dd>As all documents must be published in HTML as defined by <a href="#bib-ag-26"></a> as of 2025-06-01, indicate if there will need to be time allocated to training on this workflow.</dd>
           <dt>Public CD</dt>
           <dd>Please indicate if you intend to use the <a href="#bib-smpte-ag-22"></a> process. This decision can be changed at any time.</dd>
-          <dt>Editor</dt>
-          <dd>Member of the Standards Community who will edit the document.</dd>
           <dt>Dates</dt>
-          <dd>Estimation of the start and end dates of the project. Consult with TC Chair or SVP or Engineering Director for help.</dd>
+          <dd>Estimation of the start and end dates of the project. Consult with TC Chair or SVP or Engineering Director for help. If <b>HTML Base Doc</b> is checked <b>No</b> and the project is a <b>Revision</b>, extra time shall be allocated to creation of an HTML base doc. If <b>HTML Training</b> is checked <b>Yes</b> extra time shall be allocated for said training.</dd>
           <dt>Known References</dt>
           <dd>Complete this section if there are known documents or bodies of work critical to the project e.g. SMPTE mapping of an ITU or ISO/IEC standard.</dd>
           <dt>External Liaisons</dt>
@@ -121,21 +130,25 @@ ER – Engineering Report     RDD – Registered Disclosure Document
           <dt>Project Group Name and Existing Group question</dt>
           <dd>The submitter may make a request here for a new or existing Project Group to support the Project. It may be modified if the SVP decides that the work should go elsewhere. If the Group already exists, enter its name exactly as shown in Teams. If a new Group is required, enter the proposed name and fill out the fields below for the new group to be set up. Individual – for projects with only a single person doing the work and therefore needing no Teams resources.</dd>
           <dt>Project Type</dt>
-          <dd>Check one of these boxes where:
-<pre>
-WG – Working Group typically for larger projects with several subgroups doing drafting
-DG – Drafting Group for drafting an individual document
-SG – Study Group to create an Engineering Report (internal to SMPTE or for publication)
-TF – Task Force for study groups involving multiple TCs or active participation by 
-     external organizations
-</pre>
-          </dd>
+          <dd>Check one of these boxes where:</dd>
+          <dd><b>WG</b> – Working Group typically for larger projects with several subgroups doing drafting</dd>
+          <dd><b>DG</b> – Drafting Group for drafting an individual document</dd>
+          <dd><b>SG</b> – Study Group to create an Engineering Report (internal to SMPTE or for publication)</dd>
+          <dd><b>TF</b> – Task Force for study groups involving multiple TCs or active participation by 
+     external organizations</dd>
           <dt>Parent TC</dt>
           <dd>The TC this project reports to. The applicant can make a request or leave blank; final assignment made by SVP.</dd>
+          <dt>Editor</dt>
+          <dd>Member of the Standards Community who will edit the document.</dd>
+          <dt>HTML Editor Expert</dt>
+          <dd>Member of the Standards Community who has experience with the HTML workflow as defined in <a href="#bib-ag-26"></a>, to assist the <b>Editor</b> and/or <b>Group Chair</b> as needed. This may be the same person as <b>Editor</b> and/or <b>Group Chair</b>.</dd>
           <dt>Group Chair</dt>
-          <dd>Name of the individual who will Chair Group meetings.</dd>
+          <dd>Member of the Standards Community who will Chair Group meetings.</dd>
           <dt>Group Secretary [optional]</dt>
           <dd>Member of the Standards Community to perform secretarial tasks.</dd>
+          <dt>GitHub UserName</dt>
+          <dd><b>Editor</b>, <b>HTML Editor Expert</b>, and <b>Group Chair</b> have fields for <b>GitHub UserName</b> that are required. This is to map the Standards Community member to their GitHub user account, and ensure the user has the proper access and permissions on GitHub and assigned to the correct GH Team and Repos. It is highly advised the <b>Group Secretary</b> also have a <b>GitHub Username</b>, as there are GH processes they may have to manage.</dd>
+
         </dl>
       </section>
 
@@ -156,7 +169,7 @@ TF – Task Force for study groups involving multiple TCs or active participatio
   <section id="sec-elements">
     <ol>
       <li>
-        <a id="element-a" title="SMPTE AG-06, New Project Form" href="./elements/AG-06a-New-Project-Form-2022-12-06.docx"></a>
+        <a id="element-a" title="SMPTE AG-06, New Project Form" href="elements/AG-06a-New-Project-Form-2025-02-27.docx"></a>
       </li>
     </ol>
   </section>
@@ -165,10 +178,10 @@ TF – Task Force for study groups involving multiple TCs or active participatio
   <section id="sec-bibliography">
     <ul>
       <li><cite id="bib-smpte-ag-02">SMPTE AG-02</cite>, Document Naming and Packaging
-        <a>https://www.smpte.org/about/policies-and-governance</a></li>
+        <a>https://doc.smpte-doc.org/ag-02/main/</a></li>
         <li><cite id="bib-smpte-ag-22">SMPTE AG-22</cite>, Public Committee Draft (Public CD) Process 
-        <a>https://www.smpte.org/about/policies-and-governance</a></li>
-    </ul>
+          <a>https://doc.smpte-doc.org/ag-22/main/</a></li>
+        </ul>
   </section>
 
 </body>
